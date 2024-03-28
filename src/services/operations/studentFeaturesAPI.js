@@ -27,8 +27,7 @@ function loadScript(src) {
 export async function buyCourse(token, courses, userDetails, navigate, dispatch) {
     const toastId = toast.loading("Loading...");
     try{
-        //load the script
-        console.log("script load ho gayi")
+        
 
 
         const res = await loadScript("https://checkout.razorpay.com/v1/checkout.js");
@@ -38,7 +37,7 @@ export async function buyCourse(token, courses, userDetails, navigate, dispatch)
             return;
         }
 
-        console.log("order initiate ho rha hai");
+     ;
 
         //initiate the order
         const orderResponse = await apiConnector("POST", COURSE_PAYMENT_API, 
@@ -47,15 +46,14 @@ export async function buyCourse(token, courses, userDetails, navigate, dispatch)
                                     Authorization: `Bearer ${token}`,
                                 })
 
-        console.log("order initiate ho gya");
-
+  
 
         if(!orderResponse.data.success)
         {
             throw new Error(orderResponse.data.message);
         }
 
-        console.log("PRINTING orderResponse", orderResponse);
+        
         //options
         const options = {
             key: process.env.RAZORPAY_KEY,
