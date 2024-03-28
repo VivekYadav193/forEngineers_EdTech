@@ -125,13 +125,13 @@ function Home() {
               "Our courses are designed and taught by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you."
             }
             ctabtn1={{
-              btnText: "Try it Yourself",
-              link: "/signup",
+              btnText: "Log In",
+              link: "/login",
               active: true,
             }}
             ctabtn2={{
               btnText: "Learn More",
-              link: "/signup",
+              link: "/about",
               active: false,
             }}
             codeColor={"text-yellow-25"}

@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const CodeBlocks = ({ codeblock, codeColor, grad }) => {
   return (
-    <div className="h-[320px]   z-[100]  code-border flex flex-row py-3  sm:text-sm leading-[18px] sm:leading-6 relative w-[400px] lg:w-[400px]">
+    <div className="h-[320px]   z-[100]  code-border flex flex-row py-3  sm:text-sm leading-[18px] sm:leading-6 relative  w-[300px] md:w-[400px]   lg:w-[400px]">
       {/* Gradient */}
       {grad}
 
