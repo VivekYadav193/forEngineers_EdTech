@@ -82,6 +82,7 @@ exports.capturePayment = async (req, res) => {
 
 // verify the payment
 exports.verifyPayment = async (req, res) => {
+  
   const razorpay_order_id = req.body?.razorpay_order_id
   const razorpay_payment_id = req.body?.razorpay_payment_id
   const razorpay_signature = req.body?.razorpay_signature
