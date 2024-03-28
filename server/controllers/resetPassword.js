@@ -25,7 +25,7 @@ exports.resetPasswordToken = async (req, res) => {
    
 
     // const url = `http://localhost:3000/update-password/${token}`
-    const url = `https://forEngineers-edtech-project.vercel.app/update-password/${token}`;
+    const url = `for-engineers-ed-tech.vercel.app/update-password/${token}`;
 
     await mailSender(
       email,

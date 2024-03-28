@@ -74,7 +74,7 @@ exports.contactUsEmail = (
   
   <body>
       <div class="container">
-          <a href="https://forEngineers-edtech-project.vercel.app"><img class="logo"
+          <a href="https://for-engineers-ed-tech.vercel.app"><img class="logo"
                   src="https://res.cloudinary.com/dmtpxsnck/image/upload/v1711599704/logo-edtech/image_dcnq2x.png" alt="forEngineers Logo"></a>
           <div class="message">Contact Form Confirmation</div>
           <div class="body">
