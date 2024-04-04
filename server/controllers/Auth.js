@@ -210,6 +210,7 @@ exports.sendotp = async (req, res) => {
       })
     }
     const otpPayload = { email, otp }
+    
     const otpBody = await OTP.create(otpPayload)
     
     res.status(200).json({

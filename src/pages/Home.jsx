@@ -36,8 +36,8 @@ function Home() {
         {/* Heading */}
 
         <div className="text-center text-4xl font-semibold">
-          Think Slow
-          <HighlightText text={"Code Fast !"} />
+          Kyun Nahi
+          <HighlightText text={"Ho Rahi Padhai !"} />
         </div>
 
         {/* Sub Heading */}
@@ -73,17 +73,16 @@ function Home() {
             <CodeBlocks
               grad={<div className="codeblock3 absolute"></div>}
               codeColor={"text-white"}
-              codeblock={`fn greet()
-              { println!("NAMASTE DUNIYA");
+              codeblock={`#
+              #[macro_use] extern crate rocket;
+              #[get("/")]
+              fn index() -> &'static str {
+                  "Hello, World!"
               }
-            fn greet_by_name(name: &str) {   
-              println!("NAMASTE {}", name);
-            }
-            fn main() 
-            {   
-                 greet();
-                greet_by_name("USER");
-            }`}
+              fn main() {
+                  rocket::ignite().mount("/", routes![index]).launch();
+              }
+              `}
             />
           </div>
         </div>
@@ -103,7 +102,7 @@ function Home() {
                 }
               }
               console.log(factorial(5));  
-              // Output: 120
+            
               `}
             />
           </div>

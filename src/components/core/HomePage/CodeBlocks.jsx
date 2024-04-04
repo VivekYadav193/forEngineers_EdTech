@@ -28,7 +28,7 @@ const CodeBlocks = ({ codeblock, codeColor, grad }) => {
         className={`w-[90%]   font-bold font-mono ${codeColor} pr-1`}
       >
         <TypeAnimation
-          sequence={[codeblock, 1000, ""]}
+          sequence={[codeblock, 500, ""]}
           cursor={true}
           repeat={Infinity}
           style={{
