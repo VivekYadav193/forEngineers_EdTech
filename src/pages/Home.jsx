@@ -35,9 +35,9 @@ function Home() {
 
         {/* Heading */}
 
-        <div className="text-center text-4xl font-semibold">
-          Kyun Nahi
-          <HighlightText text={"Ho Rahi Padhai !"} />
+        <div className="text-center text-4xl z-[10] font-semibold">
+        क्यों नहीं {" "}
+          <HighlightText text={"हो रही पढ़ाई!"} />
         </div>
 
         {/* Sub Heading */}

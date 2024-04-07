@@ -74,6 +74,7 @@ const Catalog = () => {
         </div>
       </div>
 
+      
       {/* Section 1 */}
       <div className=" mx-auto box-content w-full max-w-maxContentTab px-4 py-12 lg:max-w-maxContent">
         <div className="section_heading">Courses to get you started</div>
@@ -105,6 +106,8 @@ const Catalog = () => {
           />
         </div>
       </div>
+
+
       {/* Section 2 */}
       <div className=" mx-auto box-content w-full max-w-maxContentTab px-4 py-12 lg:max-w-maxContent">
         <div className="section_heading">
@@ -116,6 +119,7 @@ const Catalog = () => {
           />
         </div>
       </div>
+
 
       {/* Section 3 */}
       <div className=" mx-auto box-content w-full max-w-maxContentTab px-4 py-12 lg:max-w-maxContent">

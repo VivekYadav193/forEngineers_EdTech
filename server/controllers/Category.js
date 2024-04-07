@@ -56,27 +56,27 @@ exports.categoryPageDetails = async (req, res) => {
       })
       .exec();
 
-    
     // Handle the case when the category is not found
     if (!selectedCategory) {
-     
       return res
         .status(404)
         .json({ success: false, message: "Category not found" });
     }
     // Handle the case when there are no courses
     if (selectedCategory.courses.length === 0) {
-      
       return res.status(404).json({
         success: false,
         message: "No courses found for the selected category.",
       });
     }
 
+    
     // Get courses for other categories
     const categoriesExceptSelected = await Category.find({
       _id: { $ne: categoryId },
     });
+
+
     let differentCategory = await Category.findOne(
       categoriesExceptSelected[getRandomInt(categoriesExceptSelected.length)]
         ._id
@@ -86,7 +86,7 @@ exports.categoryPageDetails = async (req, res) => {
         match: { status: "Published" },
       })
       .exec();
-   
+
     // Get top-selling courses across all categories
     const allCategories = await Category.find()
       .populate({
@@ -98,8 +98,6 @@ exports.categoryPageDetails = async (req, res) => {
     const mostSellingCourses = allCourses
       .sort((a, b) => b.sold - a.sold)
       .slice(0, 10);
-
-    
 
     res.status(200).json({
       success: true,
