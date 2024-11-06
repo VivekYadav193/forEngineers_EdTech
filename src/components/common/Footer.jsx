@@ -173,7 +173,7 @@ const Footer = () => {
           </div>
 
           <div className="text-center">
-            Made with ❤️ Vivek Yadav © 2024 forEngineers
+             © 2024 forEngineers
           </div>
         </div>
       </div>
